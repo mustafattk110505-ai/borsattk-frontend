@@ -2,3 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 html, body, #root { height: 100%; }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0b1522;
+  color: white;
+  padding: 12px 24px;
+  border-bottom: 2px solid #1f2b3d;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00d084;
+}
+
+.status {
+  margin-left: 10px;
+  font-size: 0.9rem;
+  color: #58ffb5;
+}
+
+.header-right nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 0.95rem;
+}
+
+.header-right nav a:hover {
+  color: #00d084;
+}

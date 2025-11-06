@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { Card, CardContent } from "@/components/ui/card";
+import "./ChartPanel.css";
 import { Chart, registerables } from "chart.js";
 
 Chart.register(...registerables);
@@ -52,11 +52,9 @@ const ChartPanel = () => {
   }, []);
 
   return (
-    <Card className="bg-[#0b0f17] border border-gray-800 text-white w-full h-[400px] rounded-2xl shadow-lg">
-      <CardContent className="p-4 h-full">
-        <canvas ref={chartRef}></canvas>
-      </CardContent>
-    </Card>
+    <div className="chart-container bg-[#0b0f17] border border-gray-800 text-white w-full h-[400px] rounded-2xl shadow-lg p-4">
+      <canvas ref={chartRef}></canvas>
+    </div>
   );
 };
 
